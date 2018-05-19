@@ -1,0 +1,9 @@
+<h1><%= @current_date%><h1>
+
+<div>
+	
+	<%= form_tag '/homeworks/result' do %>
+    現在時間：<%= @current_date %> <br />
+    增加天數：<%= text_field_tag 'day' %> <br />
+    <%= submit_tag "開始計算" %>
+  <% end %>
